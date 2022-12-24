@@ -69,3 +69,21 @@ values('JP27',null,20,'2022-11-07',1,null);
 #sifra 2
 insert  into grupa(naziv,maksimalnopolaznika,smjer,datumpocetka)
 values('PP26',20,2,'2022-11-07 19:00:00');
+
+insert into osoba(ime,prezime,email)
+values
+('Kristijan','Ratković','ratkovic.kristijan@gmail.com'),
+('Kristijan','Vidaković','kristijan.vidakovic111@gmail.com'),
+('Isidora','Karan','karanisidora@hotmail.com'),
+('Martina','Novoselac','novoselac.martina@gmail.com'),
+('Lorena','Čiček','cicek.lorena@gmail.com'),
+('Marko','Mijatović','mijat5555@gmail.com'),
+('Marko','Perak','markoperak469@gmail.com'),
+('Lovre','Burazer-Pavešković','lburazer8@gmail.com'),
+('Krunoslav','Kasalo','kkruno25@msn.com'),
+('Karlo','Odobašić','karloodobasic26@gmail.com'),
+('Karlo','Kapl','kaplkarlo0@gmail.com'),
+('Ivan','Dubravac','ivandubravac99@gmail.com'),
+('Mario','Živković','mario.zivkovic.znr@gmail.com'),
+('Toni','Stojčević','stojcevict@gmail.com'),
+('Filip','Horvat','filiphorvat912@gmail.com');
