@@ -1,5 +1,5 @@
 drop database if exists edunovajp27Unos;
-create database edunovajp27Unos;
+create database edunovajp27Unos default charset utf8;
 use edunovajp27Unos;
 
 create table smjer(
@@ -86,4 +86,28 @@ values
 ('Ivan','Dubravac','ivandubravac99@gmail.com'),
 ('Mario','Živković','mario.zivkovic.znr@gmail.com'),
 ('Toni','Stojčević','stojcevict@gmail.com'),
-('Filip','Horvat','filiphorvat912@gmail.com');
+('Filip','Horvat','filiphorvat912@gmail.com'),
+('Tomislav','Jakopec','tomislavjakopec@gmail.com');
+
+insert into polaznik (osoba)
+values(1),(2),(3),(4),(5),(6),(7),(8),
+(9),(10),(11),(12),(13),(14),(15);
+
+insert into predavac (osoba)
+values (16);
+
+insert into clan (grupa,polaznik)
+values
+(1,1),(1,2),
+(1,3),(1,4),
+(1,5),(1,6),
+(1,7),(1,8),
+(1,9),(1,10),
+(1,11),(1,12),
+(1,13),(1,14),
+(1,15);
+
+update grupa set datumpocetka='2022-11-07 17:00:00' where sifra=1;
+
+delete from smjer where sifra=3;
+
