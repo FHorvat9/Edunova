@@ -12,8 +12,7 @@ public class Z01 {
 		int broj = Integer.parseInt(JOptionPane.showInputDialog("Upisite broj"));
 		if (broj < 10) {
 			System.out.println("Osijek");
-		}
-		else {
+		} else {
 			System.out.println("Donji Miholjac");
 		}
 	}
