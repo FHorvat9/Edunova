@@ -4,15 +4,15 @@ import javax.swing.JOptionPane;
 
 public class Z06LjubavniKalkulator2 {
 	public static void main(String[] args) {
-		String imeA = obavezanString("Upisi svoje ime");
-		String imeB = obavezanString("Upisi ime simpatije");
-		
+		String imeA = obavezanString("Upisi svoje ime").replaceAll("\\s+", "");
+		String imeB = obavezanString("Upisi ime simpatije").replaceAll("\\s+", "");
+
 //----------------------Za ispis odkomentiraj + linija 42 i 62-------------
 		System.out.println(imeA + " i " + imeB);
 		System.out.println(brojSlova(imeA, imeB));
 		System.out.println(prvikorak(brojSlova(imeA, imeB), imeA.length(), imeB.length()));
 //---------------------------------------------------------
-		
+
 		System.out.print(imeA + " i " + imeB + " se vole "
 				+ kalkulator(prvikorak(brojSlova(imeA, imeB), imeA.length(), imeB.length())) + "%");
 
@@ -136,6 +136,6 @@ public class Z06LjubavniKalkulator2 {
 			}
 		}
 		return "";
-		
+
 	}
 }
